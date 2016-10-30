@@ -1,7 +1,15 @@
 body {
+<<<<<<< HEAD
   width: 800px;
   margin: 0 auto;
   font-family: 'Source Code Pro', monospace;
+=======
+  font-family: "Source+Code+Pro" sans-serif;
+  display: flex;
+  justify-content: center;
+  text-align: left;
+  width: 500px;
+>>>>>>> master
 }
 
 h1 {
