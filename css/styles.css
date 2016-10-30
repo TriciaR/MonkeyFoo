@@ -1,21 +1,57 @@
 body {
-  font-family: "Source+Code+Pro" sans-serif;
-  display: flex;
-  justify-content: center;
-  text-align: left;
+  width: 800px;
+  margin: 0 auto;
+  font-family: 'Source Code Pro', monospace;
 }
 
-.title {
-  font: 25px black bold underline;
-  text-align: center;
-}
-
-.crazycats {
-  max-width: 500px;
-  border: 2px solid black;
-}
-
-.email {
-  font: 15px black;
+h1 {
   display: block;
+  text-align: center;
+  width: 600px;
+  height: 100px;
+  font-size: 25px;
+  font-weight: bold;
+  position: relative;
+}
+
+div {
+	padding-left: 60px;
+	padding-right: 60px;
+	background-color: gray;
+  height: 100px;
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+  justify-content: space-between;
+}
+
+img.rawrcatlf {
+  height: 90px;
+  padding: 5px;
+}
+
+img.rawrcatrt {
+  padding: 5px;
+  width: 90px;
+  transform: scaleX(-1);
+}
+
+img.crazycats {
+  height: 200px;
+  border: 2px solid black;
+  position: relative;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h3 {
+  display: block;
+  text-align: center;
+  width: auto;
+}
+
+.orleft, .repoleft, .codeleft, , .repeatleft {
+  display: flex;
+  justify-content: flex-start;
 }

@@ -2,107 +2,112 @@
 <html>
   <head>
     <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet">
+
     <title>Git -> GitHub Practice by Anna Mendoza 2016_10</title>
+
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
   </head>
   <body>
-    <h1 class="title">Git -> GitHub Practice by Anna Mendoza 2016_10</h1>
 
+    <div>
+      <img src="images/cat.png" class="rawrcatlf"/>
+
+      <h1>Git -> GitHub <br> Practice by Anna Mendoza Oct-16</h1>
+
+      <img src="images/cat.png" class="rawrcatrt"/>
+
+    </div>
     <img src='http://edgecats.net/first' alt='a random cat gif!' class="crazycats"/>
 
-    <p class="email">
-      Consider creating a visualization between
-      the the transfer of data between the two
-      branches. And then when you've made
-      a ton of changes in one branch... you're
-      ultimately going to merge those changes
-      to the MASTER and then to GH-PAGES
+    <h3>
+      Consider creating a visualization between<br />
+       the transfer of data between the two<br />
+      branches. <br />And then when you've made<br />
+      a ton of changes in one branch... you're<br />
+      ultimately going to merge those changes<br />
+      to the MASTER and then to GH-PAGES<br /><br />
 
-      <b>MASTER is the production branch.
-      GH-PAGE is the hosting branch for the site on github.</b>
+      <b>MASTER is the production branch.<br />
+      GH-PAGE is the hosting branch for the site on<br /> github.</b><br /><br />
 
-      BUT you're going to use MASTER for
-      the production branch, which means
-      that making a STAGING branch would be good for
-      a development branch.
+      BUT you're going to use MASTER for<br />
+      the production branch, which means<br />
+      that making a STAGING branch would be good for<br />
+      a development branch.<br /><br />
 
-      At this point you should be working with
-      all the files and you'll be making sure that you're pushing
-      the right stuff to the MASTER BRANCH.
-      FINGERS CROSSED!
+      At this point you should be working with<br />
+      all the files and you'll be making sure that<br /> you're pushing<br />
+      the right stuff to the MASTER BRANCH.<br />
+      FINGERS CROSSED!<br /><br />
+      REMIND YOURSELF:<br />
+      WHICH BRANCH AM I WORKING ON?<br /><br />
 
-      REMIND YOURSELF:
-      WHICH BRANCH AM I WORKING ON?
+      AND IF I HAVE TO MERGE WORK<br />
+      FROM ONE BRANCH INTO ANOTHER?<br />
+      WHAT DO I HAVE TO DO?<br /><br />
+      Remember:<br />
+      MASTER IS the MAIN BRANCH<br />
+      and other branches can be used for making<br /> experiments, changes, whatever you wish.<br /><br /><br />
+      IF you want to commit that experiment work  to the<br /> MASTER branch,<br /><br />
+      THEN you merge the changes into the MASTER branch.<br /><br />
+      But you have to remember to save all the work:<br /><b> 'git add',<br /> 'git commit',</b><br /><br />
+      and perhaps push that brach to github:<br />
+      <b>git push origin name_of_branch</b><br /><br />
 
-      AND IF I HAVE TO MERGE WORK
-      FROM ONE BRANCH INTO ANOTHER?
-      WHAT DO I HAVE TO DO?
+      <i>IF you don't want the work in the experiment<br /> branch to ever reach the master branch.<br />
+      DELETE the experiment branch and you're good.<br />
+      Never goes the MASTER BRANCH, and can then get deleted.</i><br /><br /><br />
 
-      Remember:
-      MASTER IS the MAIN BRANCH
-      and other branches can be used for making experiments, changes, whatever you wish.
+      ///////////////////////////////////////////////////<br /><br /><br />
 
-      IF you want to commit that experiment work  to the MASTER branch,
-      THEN you merge the changes into the MASTER branch.
-      But you have to remember to save all the work: 'git add', 'git commit',
-      and perhaps push that brach to github:
-      git push origin name_of_branch
+      TIPS:<br />
+      - DO NOT WORK in the GH-PAGES branch.<br />
+      - WORK PRIMARILY FROM OTHER BRANCHES<br />
+        starting from MASTER.<br />
+      - Then merge the work from the other branch into<br /> MASTER.<br />
+      - Then checkout Gh-pages and<br />
+      - MERGE MASTER into GH-PAGES...<br /><br /><br />
 
-      <i>IF you don't want the work in the experiment branch to ever reach the master branch.
-      DELETE the experiment branch and you're good.
-      Never goes the MASTER BRANCH, and can then get deleted.</i>
+      ///////////////////////////////////////////////////<br /><br /><br />
 
-      //////////////////////////////////////////////////////////////////////
+      This will be how you get up to speed<br />
+      to Git + Github... PRACTICE.<br /><br />
 
-      TIPS:
-      - DO NOT WORK in the GH-PAGES branch.
-      - WORK PRIMARILY FROM OTHER BRANCHES
-        starting from MASTER.
-      - Then merge the work from the other branch into MASTER.
-      - Then checkout Gh-pages and
-      - MERGE MASTER into GH-PAGES...
-
-      ////////////////////////////////////////////////////////
-
-      This will be how you get up to speed
-      to Git + Github... PRACTICE.
-
-      $ mkdr some_folder
-      $ cd some_folder
-      $ git init
-      $ git commit -m "first commit"
-      $ touch index.html
-      $ mkdir css
-      $ cd css
-      $ touch styles.css
-      $ cd ..
-      $ ls
-      $ subl index.html
-      # then work here in the master branch and when ready switch branches
-      $ git status
-      $ git add .
-      or
-      $ git add name_of_asset
-      $ git commit -m "the commit message"
-      # create a repo on github and push to the remote repository
-      $ git push -u path-to-branch-on-github
-      $  git checkout -b new_branch
-      # code a piece of functionality and save work:
-      $ git status
-      $ git add .
-      $ git commit -m
-      $ git push origin new_branch
-      $ git checkout master
-      $ git merge new_branch master
-
-      # AND REPEAT until you feel confident!!
-
-      ////////////////////////////////////////////////////////
-
-      +++++++++++++++++++++++++++++++++++++++++++++++++++
-        SEE YOU NEXT TIME!
-        Best,
+      <ul><i>
+          <li>$ mkdr some_folder</li>
+          <li>$ cd some_folder</li>
+          <li>$ git init</li>
+          <li>$ git commit -m "first commit"</li>
+          <li>$ touch index.html</li>
+          <li>$ mkdir css</li>
+          <li>$ cd css</li>
+          <li>$ touch styles.css</li>
+          <li>$ cd ..</li>
+          <li>$ ls</li>
+          <li>$ subl index.html</li>
+        <p># then work here in the master branch and when ready switch branches</p>
+          <li>$ git status</li>
+          <li>$ git add .</li><br />
+        <p class="orleft">or...</p><br />
+          <li>$ git add name_of_asset</li>
+          <li>$ git commit -m "the commit message"</li>
+        <p class="repoleft"># create a repo on github and push to the remote repository.</p>
+          <li>$ git push -u path-to-branch-on-github</li>
+          <li>$  git checkout -b new_branch</li>
+        <p class="codeleft"># code a piece of functionality and save work:</p>
+          <li>$ git status</li>
+          <li>$ git add .</li>
+          <li>$ git commit -m "Version2"</li>
+          <li>$ git push origin new_branch</li>
+          <li>$ git checkout master</li>
+          <li>$ git merge new_branch master</li>
+        <p class="repeatleft"># AND REPEAT until you feel confident!!</p>
+      </i></ul><br /><br />
+      ///////////////////////////////////////////////////<br /><br /><br />
+      +++++++++++++++++++++++++++++++++++++++++++++++++++<br /><br /><br />
+        SEE YOU NEXT TIME!<br /><br />
+        Best,<br />
         ANNA
-
-    </p>
+    </h3>
   </body>
 </html>
