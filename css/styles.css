@@ -1,0 +1,21 @@
+body {
+  font-family: "Source+Code+Pro" sans-serif;
+  display: flex;
+  justify-content: center;
+  text-align: left;
+}
+
+.title {
+  font: 25px black bold underline;
+  text-align: center;
+}
+
+.crazycats {
+  max-width: 500px;
+  border: 2px solid black;
+}
+
+.email {
+  font: 15px black;
+  display: block;
+}
