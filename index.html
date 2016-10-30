@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Git -> GitHub Practice by Anna Mendoza 2016_10</title>
+  </head>
+  <body>
+    <p>
+      Consider creating a visualization between
+      the the transfer of data between the two
+      branches. And then when you've made
+      a ton of changes in one branch... you're
+      ultimately going to merge those changes
+      to the MASTER and then to GH-PAGES
+
+      <b>MASTER is the production branch.
+      GH-PAGE is the hosting branch for the site on github.</b>
+
+      BUT you're going to use MASTER for
+      the production branch, which means
+      that making a STAGING branch would be good for
+      a development branch.
+
+      At this point you should be working with
+      all the files and you'll be making sure that you're pushing
+      the right stuff to the MASTER BRANCH.
+      FINGERS CROSSED!
+
+      REMIND YOURSELF:
+      WHICH BRANCH AM I WORKING ON?
+
+      AND IF I HAVE TO MERGE WORK
+      FROM ONE BRANCH INTO ANOTHER?
+      WHAT DO I HAVE TO DO?
+
+      Remember:
+      MASTER IS the MAIN BRANCH
+      and other branches can be used for making experiments, changes, whatever you wish.
+
+      IF you want to commit that experiment work  to the MASTER branch,
+      THEN you merge the changes into the MASTER branch.
+      But you have to remember to save all the work: 'git add', 'git commit',
+      and perhaps push that brach to github:
+      git push origin name_of_branch
+
+      <i>IF you don't want the work in the experiment branch to ever reach the master branch.
+      DELETE the experiment branch and you're good.
+      Never goes the MASTER BRANCH, and can then get deleted.</i>
+
+      //////////////////////////////////////////////////////////////////////
+
+      TIPS:
+      - DO NOT WORK in the GH-PAGES branch.
+      - WORK PRIMARILY FROM OTHER BRANCHES
+        starting from MASTER.
+      - Then merge the work from the other branch into MASTER.
+      - Then checkout Gh-pages and
+      - MERGE MASTER into GH-PAGES...
+
+      ////////////////////////////////////////////////////////
+
+      This will be how you get up to speed
+      to Git + Github... PRACTICE.
+
+      $ mkdr some_folder
+      $ cd some_folder
+      $ git init
+      $ git commit -m "first commit"
+      $ touch index.html
+      $ mkdir css
+      $ cd css
+      $ touch styles.css
+      $ cd ..
+      $ ls
+      $ subl index.html
+      # then work here in the master branch and when ready switch branches
+      $ git status
+      $ git add .
+      or
+      $ git add name_of_asset
+      $ git commit -m "the commit message"
+      # create a repo on github and push to the remote repository
+      $ git push -u path-to-branch-on-github
+      $  git checkout -b new_branch
+      # code a piece of functionality and save work:
+      $ git status
+      $ git add .
+      $ git commit -m
+      $ git push origin new_branch
+      $ git checkout master
+      $ git merge new_branch master
+
+      # AND REPEAT until you feel confident!!
+
+      ////////////////////////////////////////////////////////
+
+      +++++++++++++++++++++++++++++++++++++++++++++++++++
+        SEE YOU NEXT TIME!
+        Best,
+        ANNA
+
+    </p>
+  </body>
+</html>
