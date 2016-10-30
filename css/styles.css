@@ -3,6 +3,7 @@ body {
   display: flex;
   justify-content: center;
   text-align: left;
+  width: 500px;
 }
 
 .title {
